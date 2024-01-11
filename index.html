@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Translator App</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <link rel="stylesheet" href="./assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Translator App</h1>
-      <div class="columns">
-        <div class="column is-half">
-          <div class="field">
-            <label class="label">Input Text</label>
-            <div class="control">
-              <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Translator App</h1>
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label">Input Text</label>
+                        <div class="control">
+                            <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Target Language</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="targetLanguage">
+                                    <option value="en">English</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="fr">French</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button is-primary" id="translateBtn">Translate</button>
+                </div>
+                <div class="column is-half">
+                    <div class="field">
+                        <label class="label">Translated Text</label>
+                        <div class="control">
+                            <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
+                                readonly></textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">Target Language</label>
-            <div class="control">
-              <div class="select">
-                <select id="targetLanguage">
-                  <option value="en">English</option>
-                  <option value="es">Spanish</option>
-                  <option value="fr">French</option>
-                  <!-- Add more language options as needed -->
-                </select>
-              </div>
-            </div>
-          </div>
-          <button class="button is-primary" onclick="translate()">Translate</button>
         </div>
-        <div class="column is-half">
-          <div class="field">
-            <label class="label">Translated Text</label>
-            <div class="control">
-              <textarea id="outputText" class="textarea" placeholder="Translated text will appear here" readonly></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="./assets/script.js"></script>
+    </section>
+    <script src="./assets/api-playground"></script>
 </body>
+
 </html>
