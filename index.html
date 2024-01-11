@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    </head>
+
+<body>
+    <div class="dropdown is-active">
+        <div class="dropdown-trigger">
+          <button class="button" type="button" data-toggle="example-dropdown">
+            <span>Dropdown button</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+              Dropdown item
+            </a>
+            <a class="dropdown-item">
+              Other dropdown item
+            </a>
+            <a href="#" class="dropdown-item is-active">
+              Active dropdown item
+            </a>
+            <a href="#" class="dropdown-item">
+              Other dropdown item
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              With a divider
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+<div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+  Example form in a dropdown.
+  <form>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell medium-6">
+          <label>Name
+            <input type="text" placeholder="Kirk, James T.">
+          </label>
+        </div>
+        <div class="cell medium-6">
+          <label>Rank
+            <input type="text" placeholder="Captain">Placeholder text
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<button class="button" type="button" data-toggle="example-dropdown-1">Hoverable Dropdown</button>
+<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+  Just some junk that needs to be said. Or not. Your choice.
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<script>
+    $(document).foundation();
+</script>
+<script src = "./assets/api-playground"></script>
+</html>
