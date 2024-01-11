@@ -1,0 +1,45 @@
+const randomWord = async function () {
+    const url = 'https://random-word-api.p.rapidapi.com/get_word';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'a083470254msh750cc561000c23bp1b6126jsn43f4d31d7c6e',
+            'X-RapidAPI-Host': 'random-word-api.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+randomWord();
+
+const getTranslate = async function () {
+    const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'a083470254msh750cc561000c23bp1b6126jsn43f4d31d7c6e',
+            'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
+        },
+        body: new URLSearchParams({
+            from: 'auto',
+            to: 'en',
+            text: 'xin chào'
+        })
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+getTranslate();
