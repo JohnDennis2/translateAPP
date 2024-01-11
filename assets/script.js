@@ -1,25 +1,34 @@
-function translate() {
-    const inputText = document.getElementById('inputText').value;
-    const targetLanguage = document.getElementById('targetLanguage').value;
-    const outputTextElement = document.getElementById('outputText');
-    // Use the Yandex Translate API (replace 'YOUR_API_KEY' with your actual API key)
-    const apiKey = 'YOUR_API_KEY';
-    const apiUrl = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${apiKey}&text=${encodeURIComponent(
-      inputText
-    )}&lang=${targetLanguage}`;
-    // Make a GET request to the Yandex Translate API
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.code === 200) {
-          const translatedText = data.text[0];
-          outputTextElement.value = translatedText;
-        } else {
-          outputTextElement.value = 'Error translating text. Please try again.';
-        }
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        outputTextElement.value = 'Error translating text. Please try again.';
-      });
+const chosenLanguage = "es";
+const userInput = document.getElementById('inputText')
+const userOutput = document.getElementById('outputText')
+const translateBtn = document.getElementById('translateBtn')
+
+const getTranslate = async function (language, input) {
+  const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
+  const options = {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded',
+      'X-RapidAPI-Key': 'a083470254msh750cc561000c23bp1b6126jsn43f4d31d7c6e',
+      'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
+    },
+    body: new URLSearchParams({
+      from: 'auto',
+      to: language,
+      text: input
+    })
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    userOutput.textContent = result.trans;
+  } catch (error) {
+    console.error(error);
   }
+}
+
+translateBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  getTranslate(chosenLanguage, userInput.value);
+});
