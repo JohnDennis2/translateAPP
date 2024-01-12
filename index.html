@@ -1,95 +1,99 @@
 <!DOCTYPE html>
-<html  lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Translator App</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <link rel="stylesheet" href="./assets/style.css">
-  
-</head>
-<body>
-  <section class="section is-rounded">
-    
-    <div class="container is-rounded">
-      <h1 class="title has-text-centered">Translator App
-        <i class="fa-solid fa-globe"></i>
-      </h1>
-      
-      <div class="columns">
-        
-        <div class="column is-6">
-          <div class="field">
-            <label class="label has-text-centered is-rounded">Input Text</label>
-            <div class="control">
-              <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
-            </div>
-          
-          </div>
-          <div class="field">
-            <label class="label has-text-centered">Choose Action</label>
-            <div class="control">
-              <div class="buttons are-small">
-                <button class="button is-primary">Translate</button>
-                <button class="button is-primary">Randomize</button>
-                <div class="container">
-                    <div class="notification is-primary">
-                      Recent searches here
-                    </div>
-                  </div>
-            </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-6">
-          <div class="field">
-            <label class="label has-text-centered">Translated Text</label>
-            <div class="control">
-              <textarea id="outputText" class="textarea" placeholder="Translated text will appear here" readonly></textarea>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label has-text-centered">Select Language</label>
-            <div class="buttons are-small">
-                <div class="dropdown is-active">
-                    <div class="dropdown-trigger">
-                      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                        <span>Languages</span>
-                        <span class="icon is-small">
-                          <i class="fas fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                      <div class="dropdown-content">
-                        <a href="#" class="dropdown-item">
-                          Dropdown item
-                        </a>
-                        <a class="dropdown-item">
-                          Other dropdown item
-                        </a>
-                        <a href="#" class="dropdown-item is-active">
-                          Active dropdown item
-                        </a>
-                        <a href="#" class="dropdown-item">
-                          Other dropdown item
-                        </a>
-                       
-                      </div>
-                    </div>
-                  </div>
-              <button class="button is-success">Randomize Language</button>
-            </div>
-            
-            <footer>
-                <div class="container">
-                    <div class="notification is-primary">
-                     recent translations here
-                    </div>
-                  </div>
-            </footer>
+<html lang="en">
 
-        </section>
-            <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-            </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body>
+    <section class="section is-rounded">
+
+        <div class="container is-rounded">
+            <h1 class="title has-text-centered">Translator App
+                <i class="fa-solid fa-globe"></i>
+            </h1>
+
+            <div class="columns">
+
+                <div class="column is-6">
+                    <div class="field">
+                        <label class="label has-text-centered is-rounded">Input Text</label>
+                        <div class="control">
+                            <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-centered">Choose Action</label>
+                        <div class="control">
+                            <div class="buttons are-small">
+                                <button class="button is-primary">Translate</button>
+                                <button class="button is-primary">Randomize</button>
+                                <div class="container">
+
+                                </div>
+                                <div class="notification is-primary">
+                                    Recent searches here
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="field">
+                        <label class="label has-text-centered">Translated Text</label>
+                        <div class="control">
+                            <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
+                                readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label has-text-centered">Select Language</label>
+                        <div class="buttons are-small">
+                            <div class="dropdown is-active">
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                        <span>Languages</span>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="#" class="dropdown-item">
+                                            Dropdown item
+                                        </a>
+                                        <a class="dropdown-item">
+                                            Other dropdown item
+                                        </a>
+                                        <a href="#" class="dropdown-item is-active">
+                                            Active dropdown item
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            Other dropdown item
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button is-success">Randomize Language</button>
+                        </div>
+
+                        <footer>
+                            <div class="container">
+                                <div class="notification is-primary">
+                                    recent translations here
+                                </div>
+                            </div>
+                        </footer>
+
+    </section>
+    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+
+</html>

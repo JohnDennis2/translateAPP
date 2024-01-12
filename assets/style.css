@@ -3,9 +3,6 @@ html{
     height: 100%;
 }
 
-.block:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
 
 body {
     background-image: url(./BackgroundImage1.png);
@@ -22,12 +19,19 @@ body {
     padding-block: auto;
 }
 .container {
-    background-color: aqua;
+    background-color: pink;
+    border: w3-border;
+    opacity: 10;
     
 }
 
 h1{
     background-color: cornflowerblue;
+    color: honeydew;
+    border-style: outset;
+    border-radius: 10px;
+    
+    
 
 }
 
@@ -45,6 +49,7 @@ h1{
     align-items: center;
     align-content: center;
     justify-content: center;
+    color: aliceblue;
 }
 
 .field {
@@ -52,5 +57,9 @@ h1{
     align-items: center;
     align-content: center;
     justify-content: center;
+    color: aliceblue;
+    border-style: groove;
+    border-color: rgb(165, 165, 165);
+    border-radius: 10px;
 
 }
