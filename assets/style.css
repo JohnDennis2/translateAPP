@@ -1,0 +1,56 @@
+
+html{
+    height: 100%;
+}
+
+.block:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+body {
+    background-image: url(./BackgroundImage1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+
+}
+
+.section {
+    height: 100%;
+    padding-block: auto;
+}
+.container {
+    background-color: aqua;
+    
+}
+
+h1{
+    background-color: cornflowerblue;
+
+}
+
+.label{ 
+    background-color: darkcyan;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.column-is-half{
+    background-color: chartreuse;
+}
+.control{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.field {
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
