@@ -32,3 +32,10 @@ translateBtn.addEventListener("click", function (event) {
   event.preventDefault();
   getTranslate(chosenLanguage, userInput.value);
 });
+
+// Function to save a phrase to local storage
+function saveToLocalStorage(phrase) {
+  let savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
+  savedPhrases.push(phrase);
+  localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
+}
