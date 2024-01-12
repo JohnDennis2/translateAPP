@@ -3,6 +3,10 @@ html{
     height: 100%;
 }
 
+.mainDiv {
+    background-color: aqua;
+    opacity: 0.5;
+}
 
 body {
     background-image: url(./BackgroundImage1.png);
@@ -21,7 +25,8 @@ body {
 .container {
     background-color: pink;
     border: w3-border;
-    opacity: 10;
+    opacity: 1;
+
     
 }
 
@@ -30,6 +35,8 @@ h1{
     color: honeydew;
     border-style: outset;
     border-radius: 10px;
+    opacity: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     
 
@@ -42,9 +49,7 @@ h1{
     
 }
 
-.column-is-half{
-    background-color: chartreuse;
-}
+
 .control{
     align-items: center;
     align-content: center;
