@@ -7,51 +7,37 @@
     <title>Translator App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-
 </head>
 
 <body>
-    <div class="mainDiv ">
-        <div class="secondContainer">
-    <section class="section is-rounded is-justify-content-center">
-
-        <div class="container is-rounded is-align-items-center">
-            <h1 class="title has-text-centered">Billy Bob's Translator App
-                <i class="fa-solid fa-globe"></i>
-            </h1>
-
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Translator App</h1>
             <div class="columns">
-
-                <div class="column is-6">
+                <div class="column is-half">
                     <div class="field">
-                        <label class="label has-text-centered is-rounded">Input Text</label>
+                        <label class="label">Input Text</label>
                         <div class="control">
                             <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
                         </div>
-
                     </div>
                     <div class="field">
-                        <label class="label has-text-centered">Choose Action</label>
+                        <label class="label">Target Language</label>
                         <div class="control">
-                            <div class="buttons are-small">
-                                <button class="button is-primary">Translate</button>
-                                <button class="button is-primary">Randomize</button>
-
-
-
-                                </div>
-                            
+                            <div class="select">
+                                <select id="targetLanguage">
+                                    <option value="en">English</option>
+                                    <option value="es">Spanish</option>
+                                    <option value="fr">French</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="notification is-primary">
-                                Recent searches here
-                            </div>
                     </div>
+                    <button class="button is-primary" id="translateBtn">Translate</button>
                 </div>
-                <div class="column is-6">
+                <div class="column is-half">
                     <div class="field">
-                        <label class="label has-text-centered">Translated Text</label>
+                        <label class="label">Translated Text</label>
                         <div class="control">
                             <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
                                 readonly></textarea>
@@ -96,11 +82,17 @@
                                     recent translations here
                                 </div>
                             </div>
-                            </div>
-                        </footer>
+                    </div>
+                    </footer>
 
     </section>
-</div>
+    
     <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+   
+   
+   
+   
+    <script src="./assets/script.js"></script>
+</body>
 
 </html>
