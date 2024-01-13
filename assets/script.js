@@ -35,6 +35,7 @@ translateBtn.addEventListener("click", function (event) {
 });
 
 
+
 const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/support-languages';
 const options = {
 	method: 'GET',
@@ -71,4 +72,12 @@ const getDropdown = async function (language, input) {
     populateDropdown();
   };
 
+
+
+// Function to save a phrase to local storage
+function saveToLocalStorage(phrase) {
+  let savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
+  savedPhrases.push(phrase);
+  localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
+}
 
