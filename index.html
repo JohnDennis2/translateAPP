@@ -12,7 +12,9 @@
 <body>
     <section class="section">
         <div class="container">
-            <h1 class="title">Translator App</h1>
+            <h1 class="title">Translator App
+                <i class="fa-solid fa-globe"></i>
+            </h1>
             <div class="columns">
                 <div class="column is-half">
                     <div class="field">
@@ -21,19 +23,14 @@
                             <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
                         </div>
                     </div>
-                    <div class="field">
-                        <label class="label">Target Language</label>
-                        <div class="control">
-                            <div class="select">
-                                <select id="targetLanguage">
-                                    <option value="en">English</option>
-                                    <option value="es">Spanish</option>
-                                    <option value="fr">French</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <button id="randomBtn" class="button is-primary">Random Word</button>
+                        </p>
+                        <p class="control">
+                            <button class="button is-primary" id="translateBtn">Translate</button>
+                        </p>
                     </div>
-                    <button class="button is-primary" id="translateBtn">Translate</button>
                 </div>
                 <div class="column is-half">
                     <div class="field">
@@ -44,55 +41,41 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label has-text-centered">Select Language</label>
-                        <div class="buttons are-small">
-                            <div class="dropdown is-active">
-                                <div class="dropdown-trigger">
-                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span>Languages</span>
-                                        <span class="icon is-small">
-                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content">
-                                        <a href="#" class="dropdown-item">
-                                            Dropdown item
-                                        </a>
-                                        <a class="dropdown-item">
-                                            Other dropdown item
-                                        </a>
-                                        <a href="#" class="dropdown-item is-active">
-                                            Active dropdown item
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            Other dropdown item
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="button is-success">Randomize Language</button>
+                        <button class="button is-primary">Random Translations</button>
+                        <div id="randomTranslations" class="notification is-primary">
+                         
                         </div>
-
-                        <footer>
-                            <div class="container">
-                                <div class="notification is-primary">
-                                    recent translations here
-                                </div>
-                            </div>
                     </div>
-                    </footer>
+                </div>
+            </div>
 
+            <div class="field">
+                <label class="label">Select Language To Translate</label>
+                <div class="buttons are-small">
+                    <div class="dropdown is-active">
+                        <div class="dropdown-trigger">
+                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Languages</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                      
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button is-success">Randomize Language</button>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-   
-   
-   
-   
-    <script src="./assets/script.js"></script>
-</body>
 
-</html>
+    <footer class="container">
+        <div class="notification is-primary">
+            <button class="button is-primary">MEET THE DEVELOPERS! Click me</button>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
