@@ -31,7 +31,11 @@ font-size: 14px;
     opacity: 0.8;
    
 }
-.column textarea {
+
+
+.column {
+
+justify-self: center;
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
@@ -40,7 +44,7 @@ font-size: 14px;
 
 
 .container {
-    ite
+    
     display: flexbox;
     border: 1px solid #ccc; 
     opacity: 1;
@@ -66,17 +70,34 @@ h1 {
     color: white;
 }
 
+#randomAndSaved {
+justify-content: center;
+align-items: center;
+
+}
+
+#firstColumnButtons {
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+}
 .control {
+    justify-content: center;
+    align-items: center;
     text-align: center; 
-    color: aliceblue;
+    color: rgb(128, 178, 222);
 }
 
 .field {
+    display: inline-block;
     align-items: center;
+    justify-content: space-between;
+    justify-content: center;
     text-align: center; 
     color: aliceblue;
     border-style: groove;
-    border-color: rgb(165, 165, 165);
+    border-color: rgb(77, 79, 215);
     border-radius: 10px;
 }
 footer {
@@ -87,12 +108,20 @@ footer {
 }
 
 .button {
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
 .meet {
+    align-items: center !important;
+    justify-content: center;
     color: darkgrey;
     align-items: center;
+}
+
+.buttonAndField {
+
+    justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
