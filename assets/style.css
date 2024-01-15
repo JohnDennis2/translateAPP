@@ -13,17 +13,16 @@ body {
     background-color: #f0f0f0; 
 }
 
-#characterLimit {
-display:flex;
-justify-content:end;
-align-items: end;
-background-color: white;
-color:gray;
-font-size: 14px;
+.mainDiv {
+    background-color: aqua;
+    opacity: 0.9;
+    background-size: cover;
+    
 }
 
-ß
-
+.secondContainer {
+    padding: 20px;
+}ß
 .section {
     
     height: 100vh;
@@ -113,8 +112,6 @@ footer {
     align-items: center;
 }
 .meet {
-    align-items: center !important;
-    justify-content: center;
     color: darkgrey;
     align-items: center;
 }

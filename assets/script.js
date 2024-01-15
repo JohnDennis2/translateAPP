@@ -3,7 +3,8 @@ const chosenLanguage = "es";
 const userInput = document.getElementById('inputText')
 const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
-const langDropdown = document.getElementById('#outputlangSelector')
+const maxCharacter = 2500;
+const characterLimitOnScreen = document.getElementById('characterLimit');
 
 
 const getTranslate = async function (language, input) {
@@ -65,8 +66,6 @@ randomBtn.addEventListener("click", function (event) {
 });
 
 
-
-=======
 userInput.addEventListener("input", function(){
   const remainingCharacters = userInput.value.length
   characterLimitOnScreen.innerHTML = "Character limit: " + remainingCharacters + "/" + maxCharacter;
@@ -93,8 +92,6 @@ const supportedLanguages = async function () {
   }
 }
 
-
-=======
 translateBtn.addEventListener("click", function (event) {
   event.preventDefault();
   getTranslate(chosenLanguage, userInput.value);
@@ -146,5 +143,4 @@ function saveToLocalStorage(phrase) {
   savedPhrases.push(phrase);
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
-
 
