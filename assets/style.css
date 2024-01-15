@@ -86,10 +86,13 @@ footer {
 }
 
 .button {
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
 .meet {
+    justify-content: center;
+    align-items: center;
     color: darkgrey;
     align-items: center;
 }
