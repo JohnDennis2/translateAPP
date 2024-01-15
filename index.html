@@ -12,6 +12,7 @@
 <body>
     <section class="section">
         <div class="container">
+
             <h1 class="title is-primary has-text-centered">Translator App
                 <i class="fa-solid fa-globe"></i>
             </h1>
@@ -25,19 +26,14 @@
                             <span id ="characterLimit">Character Limit: </span>
                         </div>
                     </div>
-                    <div class="field">
-                        <label class="label">Target Language</label>
-                        <div class="control">
-                            <div class="select">
-                                <select id="targetLanguage">
-                                    <option value="en">English</option>
-                                    <option value="es">Spanish</option>
-                                    <option value="fr">French</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <button id="randomBtn" class="button is-primary">Random Word</button>
+                        </p>
+                        <p class="control">
+                            <button class="button is-primary" id="translateBtn">Translate</button>
+                        </p>
                     </div>
-                    <button class="button is-primary" id="translateBtn">Translate</button>
                 </div>
                 <div class="column is-half">
                     <div class="field">
@@ -48,6 +44,24 @@
                         </div>
                     </div>
                     <div class="field">
+
+                        <button class="button is-primary">Random Translation Language</button>
+                        <div id="randomTranslations" class="notification is-primary">
+
+                        </div>
+                        <div class="field">
+                            <label class="label">Select Language To Translate</label>
+                            <div class="buttons are-small">
+                                <div class="dropdown is-active">
+                                    <div class="dropdown-trigger">
+                                        <button class="button Meet" aria-haspopup="true" aria-controls="dropdown-menu">
+                                            <span>Languages</span>
+                                            <span class="icon is-small">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+
                         <label class="label has-text-centered">Select Language</label>
                         <div class="buttons are-small">
                             <div class="dropdown">
@@ -60,9 +74,9 @@
                                     </select>
                                 </div>
                             
+
                                 </div>
                             </div>
-                            <button class="button is-success">Randomize Language</button>
                         </div>
 
                         <footer>
@@ -72,21 +86,31 @@
                     <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
                     </footer>
 
+
+        </div>
+        </div>
+        </div>
     </section>
 
+
+    <footer class="container">
+        <div class="notification is-primary">
+            <button class="button is-primary">MEET THE DEVELOPERS! Click me</button>
+        </div>
+    </footer>
+
     <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>   
-   
+    <script src="./assets/script.js"></script>
+    <script src="./savedPhrasesScript.js"></script>
+
    
     <!-- Button to navigate to savedPhrases.html -->
     <button id="viewPhrasesBtn">SavedPhrases</button>
    
    
-    <script src="./assets/script.js"></script>
-    <script src="./savedPhrasesScript.js"></script>
-
 
 </body>
 
 
 </html>
+
