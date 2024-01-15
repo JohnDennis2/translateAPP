@@ -7,7 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
         phraseElement.textContent = phrase;
         savedPhrasesContainer.appendChild(phraseElement);
     });
-     console.log("Logging something specific")
+
+    // Button click handling logic to add a new phrase
+    const addPhraseBtn = document.getElementById('PhraseBtn');
+    if (addPhraseBtn) {
+        addPhraseBtn.addEventListener('click', function () {
+            const newPhrase = prompt('Enter a new phrase:');
+            if (newPhrase) {
+                savedPhrases.push(newPhrase);
+                localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
+                
+                const phraseElement = document.createElement('div');
+                phraseElement.textContent = newPhrase;
+                savedPhrasesContainer.appendChild(phraseElement);
+            }
+        });
+    }
+    
      // Button click handling logic to navigate to savedPhrases.html
      const viewIndexBtn = document.getElementById('viewIndexBtn');
      const viewPhrasesBtn = document.getElementById('viewPhrasesBtn');
