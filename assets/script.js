@@ -114,3 +114,4 @@ function saveToLocalStorage(phrase) {
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
 
+>>>>>>>>> Temporary merge branch 2
