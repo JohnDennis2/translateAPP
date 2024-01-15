@@ -21,8 +21,9 @@
                     <div class="field">
                         <label class="label">Input Text</label>
                         <div class="control">
-                            <textarea id="inputText" maxlength = "2500" class="textarea" placeholder="Enter text to translate"></textarea>
-                            <span id ="characterLimit">Character Limit: </span>
+                            <textarea id="inputText" maxlength="2500" class="textarea"
+                                placeholder="Enter text to translate"></textarea>
+                            <span id="characterLimit">Character Limit: </span>
                         </div>
                     </div>
                     <div class="field is-grouped">
@@ -61,34 +62,35 @@
                                         </button>
                                     </div>
 
-                        <label class="label has-text-centered">Select Language</label>
-                        <div class="buttons are-small">
-                            <div class="dropdown">
-                                <div class="dropdown-trigger">
-                                    <select id="outputlangSelector" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span>Languages</span>
-                                        <span class="icon is-small">
-                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </select>
-                                </div>
-                            
+                                    <label class="label has-text-centered">Select Language</label>
+                                    <div class="buttons are-small">
+                                        <div class="dropdown">
+                                            <div class="dropdown-trigger">
+                                                <select id="outputlangSelector" class="button" aria-haspopup="true"
+                                                    aria-controls="dropdown-menu">
+                                                    <span>Languages</span>
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </select>
+                                            </div>
 
+
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <footer>
+
                             </div>
+                            <!-- Button to navigate to savedPhrases.html -->
+                            <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
+                            </footer>
+
+
                         </div>
-
-                        <footer>
-
                     </div>
-                    <!-- Button to navigate to savedPhrases.html -->
-                    <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
-                    </footer>
-
-
-        </div>
-        </div>
-        </div>
+                </div>
     </section>
 
 
@@ -104,16 +106,13 @@
     <script src="./assets/script.js"></script>
     <script src="./savedPhrasesScript.js"></script>
 
-   
-    <!-- Button to navigate to savedPhrases.html -->
-    <button id="viewPhrasesBtn">SavedPhrases</button>
-   
 
 
-   
+
+
+
 
 </body>
 
 
 </html>
-
