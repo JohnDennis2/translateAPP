@@ -66,8 +66,6 @@ randomBtn.addEventListener("click", function (event) {
 });
 
 
-
-=======
 userInput.addEventListener("input", function(){
   const remainingCharacters = userInput.value.length
   characterLimitOnScreen.innerHTML = "Character limit: " + remainingCharacters + "/" + maxCharacter;
