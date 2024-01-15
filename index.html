@@ -12,13 +12,17 @@
 <body>
     <section class="section">
         <div class="container">
-            <h1 class="title">Translator App</h1>
+            <h1 class="title is-primary has-text-centered">Translator App
+                <i class="fa-solid fa-globe"></i>
+            </h1>
             <div class="columns">
                 <div class="column is-half">
                     <div class="field">
                         <label class="label">Input Text</label>
                         <div class="control">
-                            <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
+                            <textarea id="inputText" maxlength = "2500" class="textarea" placeholder="Enter text to translate"> Test content here</textarea>
+                            <p>Test content here</p>
+                            <span id ="characterLimit">Character Limit: </span>
                         </div>
                     </div>
                     <div class="field">
@@ -48,29 +52,14 @@
                         <div class="buttons are-small">
                             <div class="dropdown">
                                 <div class="dropdown-trigger">
-                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                    <select id="outputlangSelector" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                                         <span>Languages</span>
                                         <span class="icon is-small">
                                             <i class="fas fa-angle-down" aria-hidden="true"></i>
                                         </span>
-                                    </button>
+                                    </select>
                                 </div>
-                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                                    <div class="dropdown-content">
-                                        <a href="#" class="dropdown-item">
-                                            Dropdown item
-                                        </a>
-                                        <a class="dropdown-item">
-                                            Other dropdown item
-                                        </a>
-                                        <a href="#" class="dropdown-item is-active">
-                                            Active dropdown item
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            Other dropdown item
-                                        </a>
-
-                                    </div>
+                            
                                 </div>
                             </div>
                             <button class="button is-success">Randomize Language</button>
@@ -86,8 +75,17 @@
     </section>
 
     <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>   
+   
+   
+    <!-- Button to navigate to savedPhrases.html -->
+    <button id="viewPhrasesBtn">SavedPhrases</button>
+   
+   
     <script src="./assets/script.js"></script>
     <script src="./savedPhrasesScript.js"></script>
+
+
 </body>
 
 
