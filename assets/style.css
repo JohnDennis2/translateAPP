@@ -5,8 +5,7 @@ html, body {
 }
 
 body {
-    display: flex;
-    align-items: center;
+    
     justify-content: center;
     background-image: url(./BackgroundImage1.png);
     background-repeat: no-repeat;
@@ -26,7 +25,11 @@ font-size: 14px;
 ß
 
 .section {
+    
     height: 100vh;
+    background-color: aqua;
+    opacity: 0.8;
+   
 }
 .column textarea {
     border: 1px solid #ccc;
@@ -37,7 +40,8 @@ font-size: 14px;
 
 
 .container {
-    
+    ite
+    display: flexbox;
     border: 1px solid #ccc; 
     opacity: 1;
     padding: 20px;
@@ -52,9 +56,11 @@ h1 {
     border-radius: 10px;
     opacity: 1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 .label {
+    
     background-color: darkcyan;
     text-align: center; 
     color: white;
@@ -66,9 +72,50 @@ h1 {
 }
 
 .field {
+    align-items: center;
     text-align: center; 
     color: aliceblue;
     border-style: groove;
     border-color: rgb(165, 165, 165);
     border-radius: 10px;
 }
+footer {
+    
+
+    align-items: center;
+    align-content: center;
+}
+
+.button {
+    text-align: center;
+    align-items: center;
+}
+.meet {
+    color: darkgrey;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .column {
+        width: 100% ;
+        font-size: small;
+    }
+
+   
+}
+
+@media screen and (max-width: 700px) {
+   
+    .column {
+        width: 100% ;
+        font-size: medium;
+
+    }
+
+    @media screen and (max-width: 300px) {
+       
+        .column {
+            width: 100% ;
+            font-size: larger;
+        }
