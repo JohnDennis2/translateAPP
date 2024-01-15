@@ -40,7 +40,7 @@ font-size: 14px;
 
 
 .container {
-    ite
+   
     display: flexbox;
     border: 1px solid #ccc; 
     opacity: 1;
@@ -87,10 +87,13 @@ footer {
 }
 
 .button {
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
 .meet {
+    justify-content: center;
+    align-items: center;
     color: darkgrey;
     align-items: center;
 }

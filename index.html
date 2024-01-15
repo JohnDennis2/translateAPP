@@ -12,8 +12,7 @@
 <body>
     <section class="section">
         <div class="container">
-
-            <h1 class="title is-primary has-text-centered">Translator App
+            <h1 class="title">Translator App
                 <i class="fa-solid fa-globe"></i>
             </h1>
             <div class="columns">
@@ -21,8 +20,7 @@
                     <div class="field">
                         <label class="label">Input Text</label>
                         <div class="control">
-                            <textarea id="inputText" maxlength = "2500" class="textarea" placeholder="Enter text to translate"></textarea>
-                            <span id ="characterLimit">Character Limit: </span>
+                            <textarea id="inputText" class="textarea" placeholder="Enter text to translate"></textarea>
                         </div>
                     </div>
                     <div class="field is-grouped">
@@ -43,11 +41,8 @@
                         </div>
                     </div>
                     <div class="field">
-
                         <button class="button is-primary">Random Translation Language</button>
-                        <div id="randomTranslations" class="notification is-primary">
-
-                        </div>
+                       
                         <div class="field">
                             <label class="label">Select Language To Translate</label>
                             <div class="buttons are-small">
@@ -60,60 +55,26 @@
                                             </span>
                                         </button>
                                     </div>
-
-                        <label class="label has-text-centered">Select Language</label>
-                        <div class="buttons are-small">
-                            <div class="dropdown">
-                                <div class="dropdown-trigger">
-                                    <select id="outputlangSelector" class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                                        <span>Languages</span>
-                                        <span class="icon is-small">
-                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                        </span>
-                                    </select>
-                                </div>
-                            
-
                                 </div>
                             </div>
                         </div>
 
-                        <footer>
+
 
                     </div>
-                    <!-- Button to navigate to savedPhrases.html -->
-                    <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
-                    </footer>
-
+                </div>
+            </div>
 
         </div>
         </div>
         </div>
     </section>
 
-
-    <footer class="container">
-        <div class="notification is-primary">
+    <footer class="container Meet">
+        <div class="notification Meet is-primary">
             <button class="button is-primary">MEET THE DEVELOPERS! Click me</button>
-            <!-- Button to navigate to savedPhrases.html -->
-            <button id="viewPhrasesBtn">SavedPhrases</button>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
-    <script src="./savedPhrasesScript.js"></script>
-
-   
-    <!-- Button to navigate to savedPhrases.html -->
-    <button id="viewPhrasesBtn">SavedPhrases</button>
-   
-
-
-   
-
-</body>
-
-
-</html>
-
