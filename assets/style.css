@@ -101,9 +101,16 @@ align-items: center;
 }
 footer {
     
-
     align-items: center;
     align-content: center;
+}
+
+
+#meetDev {
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .button {
@@ -114,6 +121,7 @@ footer {
 .meet {
     color: darkgrey;
     align-items: center;
+    font-style: normal;
 }
 
 .buttonAndField {
@@ -138,6 +146,7 @@ footer {
         font-size: medium;
 
     }
+}
 
     @media screen and (max-width: 300px) {
        
@@ -145,3 +154,4 @@ footer {
             width: 100% ;
             font-size: larger;
         }
+    }
