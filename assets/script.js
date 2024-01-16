@@ -1,5 +1,4 @@
 let wordList = [];
-const chosenLanguage = "es";
 const userInput = document.getElementById('inputText')
 const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
@@ -58,7 +57,7 @@ const randomWord = async function () {
     const result = await response.json();
     wordList.push(result.word);
     console.log(wordList);
-    userInput.value = ' ' + wordList.join(' ');
+    userInput.value = '' + wordList.join(' ');
   } catch (error) {
     console.error(error);
   }
@@ -145,9 +144,6 @@ dropdownResponse.addEventListener('change', function(event) {
     getDropdown();
     populateDropdown();
   };
-
-
-  //my work area
 
 
 function saveToLocalStorage(phrase) {
