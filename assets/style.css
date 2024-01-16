@@ -91,6 +91,15 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+#languageBox,
+#translateBtns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
 .meet {
     justify-content: center;
     align-items: center;
