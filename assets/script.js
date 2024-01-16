@@ -37,6 +37,7 @@ translateBtn.addEventListener("click", function (event) {
   event.preventDefault();
   wordList = userInput.value.split(" ")
   getTranslate(chosenLanguage, userInput.value);
+  saveToLocalStorage(userInput.value);
 });
 
 
