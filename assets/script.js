@@ -1,5 +1,4 @@
 let wordList = [];
-const chosenLanguage = "es";
 const userInput = document.getElementById('inputText')
 const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
@@ -58,7 +57,7 @@ const randomWord = async function () {
     const result = await response.json();
     wordList.push(result.word);
     console.log(wordList);
-    userInput.value = ' ' + wordList.join(' ');
+    userInput.value = '' + wordList.join(' ');
   } catch (error) {
     console.error(error);
   }
@@ -117,7 +116,6 @@ const getDropdown = async function (language, input) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result);
     populateDropdown(result);
     return result; 
   } catch (error) {
@@ -128,7 +126,6 @@ const getDropdown = async function (language, input) {
 
 function populateDropdown(data) {
   const dropdown = document.getElementById('outputlangSelector');
-  console.log(data);
   data.forEach(dataItem => {
     const option = document.createElement('option');
     option.value = dataItem.code;
@@ -149,13 +146,8 @@ dropdownResponse.addEventListener('change', function(event) {
   };
 
 
-  //my work area
-
-
 function saveToLocalStorage(phrase) {
   let savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
   savedPhrases.push(phrase);
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
-
-l

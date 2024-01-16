@@ -20,9 +20,21 @@ body {
     
 }
 
+#characterLimit {
+    display:flex;
+    justify-content:end;
+    align-items: end;
+    background-color: white;
+    color:gray;
+    font-size: 14px;
+    }
+
 .secondContainer {
     padding: 20px;
-}ß
+}
+
+ß
+
 .section {
     
     height: 100vh;
