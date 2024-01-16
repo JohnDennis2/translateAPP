@@ -118,6 +118,21 @@ footer {
     text-align: center;
     align-items: center;
 }
+
+#languageBox,
+#translateBtns,
+#savePhrasesBtn,
+#meetDev {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#viewPhrasesBtn {
+    margin-top:20px;
+}
+
 .meet {
     color: darkgrey;
     align-items: center;
@@ -127,6 +142,10 @@ footer {
 .buttonAndField {
 
     justify-content: center;
+}
+
+#meetDevBtn {
+    border: 2px solid green;
 }
 
 @media screen and (max-width: 1200px) {

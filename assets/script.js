@@ -6,6 +6,8 @@ const translateBtn = document.getElementById('translateBtn')
 const maxCharacter = 2500;
 const characterLimitOnScreen = document.getElementById('characterLimit');
 
+const dropdownResponse = document.getElementById('outputlangSelector');
+
 
 const getTranslate = async function (language, input) {
   const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/text';
@@ -63,7 +65,7 @@ const randomWord = async function () {
 }
 
 const randomBtn = document.getElementById('randomBtn')
-randomBtn.addEventListener("click", function (event) {
+randomBtn.addEventListener("click", async function (event) {
   event.preventDefault();
   randomWord();
 });
@@ -110,34 +112,44 @@ const options = {
 	}
 };
 
+
 const getDropdown = async function (language, input) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
     console.log(result);
     populateDropdown(result);
+    return result; 
   } catch (error) {
-    console.error();
-  }};
-  
-  function populateDropdown(data) {
-    const dropdown = document.getElementById('outputlangSelector');
-  console.log(data);
-    data.forEach(dataItem => {
-      const option = document.createElement('option');
-      option.value = dataItem.language;
-      option.textContent = dataItem.language;
-      option.addEventListener('click', () => handleOptionClick(option));
-      dropdown.appendChild(option);
-    });
+    console.error(error);
+    throw error; 
   }
+};
 
+function populateDropdown(data) {
+  const dropdown = document.getElementById('outputlangSelector');
+  console.log(data);
+  data.forEach(dataItem => {
+    const option = document.createElement('option');
+    option.value = dataItem.code;
+    option.textContent = dataItem.language;
+    option.addEventListener('click', () => handleOptionClick(option));
+    dropdown.appendChild(option);
+  });
+}
+
+dropdownResponse.addEventListener('change', function(event) {
+  console.log(event.target.value)
+  chosenLanguage = event.target.value;
+});
+  
   window.onload = function() {
     getDropdown();
     populateDropdown();
   };
 
 
+  //my work area
 
 
 function saveToLocalStorage(phrase) {
@@ -146,3 +158,4 @@ function saveToLocalStorage(phrase) {
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
 
+l
