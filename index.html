@@ -25,7 +25,7 @@
                             <textarea id="inputText" maxlength="2500" class="textarea"
                                 placeholder="Enter text to translate"></textarea>
                             <span id="characterLimit">Character Limit: </span>
-                          
+
                         </div>
                     </div>
                     <div class="grid-rows-1" id="translateBtns">
@@ -44,9 +44,10 @@
                             <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
                                 readonly></textarea>
                         </div>
-                    </div>         
-                        <div>
+                    </div>
+                    <div>
 
+<<<<<<< HEAD
                     <div class="field">
 
                         <button class="button is-primary">Random Translation Language</button>
@@ -88,29 +89,39 @@
                                         </div>
                                     </div>
                                 </div>
+=======
+                        <div class="flex grid-rows-1">
+                            <div class="dropdown flex-1 justify-between is-active" id="languageBox">
+                                <button class="button is-primary flex-1">Random Translation Language</button>
+                                <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
+                                    aria-controls="dropdown-menu"></select>
+                                </button>
+>>>>>>> edf2427a13409957d7c551b10b8e832b78e49921
                             </div>
-                        </div> 
                         </div>
-
-                                <footer>
-
-                            </div>
+                        <div id="savePhrasesBtn">
                             <!-- Button to navigate to savedPhrases.html -->
-                            <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
+                            <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
                             </footer>
-
-
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        </div>
+        </div>
+        </div>
     </section>
 
 
     <footer class="container">
-        <div class="notification is-primary">
-            <button class="button is-primary">MEET THE DEVELOPERS! Click me</button>
-            <!-- Button to navigate to savedPhrases.html -->
-            <button id="viewPhrasesBtn">SavedPhrases</button>
+        <div class="notification is-primary" id="meetDev">
+            <a href="./dev.html" class="button is-primary" id="meetDevBtn" >MEET THE DEVELOPERS!</a>
         </div>
     </footer>
 
