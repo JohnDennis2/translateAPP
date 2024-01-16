@@ -18,15 +18,16 @@
             </h1>x
             <div class="columns">
                 <div class="column is-half">
-                    <div class="field">
+                    <div class="field column">
                         <label class="label">Input Text</label>
                         <div class="control">
 
                             <textarea id="inputText" maxlength="2500" class="textarea"
                                 placeholder="Enter text to translate"></textarea>
-                            <span id="characterLimit">Character Limit: </span>
+                            <span id="characterLimit" style="color: ghostwhite;">Character Limit: </span>
 
                         </div>
+
                     </div>
                     <div class="grid-rows-1" id="translateBtns">
                         <span class="control">
@@ -36,9 +37,12 @@
                             <button class="button is-primary" id="translateBtn">Translate</button>
                         </span>
                     </div>
+
                 </div>
+               
+
                 <div class="column is-half">
-                    <div class="field">
+                    <div class="field column">
                         <label class="label">Translated Text</label>
                         <div class="control">
                             <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
@@ -47,87 +51,59 @@
                     </div>
                     <div>
 
-<<<<<<< HEAD
-                    <div class="field">
-
-                        <button class="button is-primary">Random Translation Language</button>
-                        <div id="randomTranslations" class="notification is-primary">
-
-                        </div>
-                        <div class="field">
-<<<<<<< HEAD
-                            
-=======
-
-                            <label class="label">Select Language To Translate</label>
-                           <div class= "flex grid-rows-1">
-                               <div class="dropdown flex-1 justify-between is-active" id="languageBox">
-                            <button class="button is-primary flex-1">Random Translation Language</button>
-                                            <select
-                                            id= "outputlangSelector"
-                                            class= "button flex-1"
-                                            aria-haspopup="true" aria-controls="dropdown-menu"
-                                            ></select>
-                                        </button>
-                                    </div>
->>>>>>> 6f8d54045c9495c708b6f5c487fc79de17d7aff9
-
-                                    <label class="label has-text-centered">Select Language</label>
-                                    <div class="buttons are-small">
-                                        <div class="dropdown">
-                                            <div class="dropdown-trigger">
-                                                <select id="outputlangSelector" class="button" aria-haspopup="true"
-                                                    aria-controls="dropdown-menu">
-                                                    <span>Languages</span>
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                                    </span>
-                                                </select>
-                                            </div>
 
 
-                                        </div>
-                                    </div>
-                                </div>
-=======
+                        <label class="label">Select Language To Translate</label>
                         <div class="flex grid-rows-1">
                             <div class="dropdown flex-1 justify-between is-active" id="languageBox">
                                 <button class="button is-primary flex-1">Random Translation Language</button>
                                 <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
                                     aria-controls="dropdown-menu"></select>
                                 </button>
->>>>>>> edf2427a13409957d7c551b10b8e832b78e49921
                             </div>
+
+
+
+
+
                         </div>
                         <div id="savePhrasesBtn">
                             <!-- Button to navigate to savedPhrases.html -->
                             <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
-                            </footer>
+                           
                         </div>
                     </div>
                 </div>
+
+               
+                
             </div>
         </div>
         </div>
         </div>
+        </div>
+        </div>
 
 
 
         </div>
+
         </div>
         </div>
     </section>
 
+         
 
-    <footer class="container">
-        <div class="notification is-primary" id="meetDev">
-            <a href="./dev.html" class="button is-primary" id="meetDevBtn" >MEET THE DEVELOPERS!</a>
-        </div>
-    </footer>
+            <footer class="container">
+                <div class="notification is-primary" id="meetDev">
+                    <a href="./dev.html" class="button is-primary" id="meetDevBtn">MEET THE DEVELOPERS!</a>
 
-    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
-    <script src="./savedPhrasesScript.js"></script>
+                </div>
+            </footer>
+
+            <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+            <script src="./assets/script.js"></script>
+            <script src="./savedPhrasesScript.js"></script>
 
 
 
