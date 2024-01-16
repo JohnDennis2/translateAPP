@@ -139,7 +139,7 @@ const getDropdown = async function (language, input) {
 
 
 
-// Function to save a phrase to local storage
+
 function saveToLocalStorage(phrase) {
   let savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
   savedPhrases.push(phrase);
