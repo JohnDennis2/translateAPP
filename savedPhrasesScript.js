@@ -15,12 +15,11 @@
 phrasesOnScreen();
     
     
-//      // Button click handling logic to navigate to savedPhrases.html
-//      const viewIndexBtn = document.getElementById('viewIndexBtn');
-//      const viewPhrasesBtn = document.getElementById('viewPhrasesBtn');
-//     if (viewPhrasesBtn) {
-//         viewPhrasesBtn.addEventListener('click', function () {
-//             window.location.href = 'file:///Users/ericreyna/Documents/Homework/translateAPP/savedPhrases.html';
-//         });
-//      }
-// });
+     // Button click handling logic to navigate to savedPhrases.html
+     const viewIndexBtn = document.getElementById('viewIndexBtn');
+     const viewPhrasesBtn = document.getElementById('viewPhrasesBtn');
+    if (viewPhrasesBtn) {
+        viewPhrasesBtn.addEventListener('click', function () {
+            window.location.href = 'savedPhrases.html';
+        });
+     }
