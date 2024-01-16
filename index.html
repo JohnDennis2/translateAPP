@@ -53,17 +53,19 @@
 
                         <label class="label">Select Language To Translate</label>
                         <div class="flex grid-rows-1">
-                            <div class="dropdown flex-1 justify-between is-active" id="languageBox">
-                                <button class="button is-primary flex-1">Random Translation Language</button>
-                                <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
+                            <div class="dropdown is-active" id="languageBox">
+                                <button class="button is-primary is-flex-direction-column">Random Language</button>
+                                <div class="select is-flex-direction-column">
+                                    <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
                                     aria-controls="dropdown-menu"></select>
+                                </div>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div id="savePhrasesBtn">
                         <!-- Button to navigate to savedPhrases.html -->
-                        <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
+                        <a href="./savedPhrases.html" class="button is-primary" id="viewPhrasesBtn">Saved Phrases</a>
                         </footer>
                     </div>
                 </div>

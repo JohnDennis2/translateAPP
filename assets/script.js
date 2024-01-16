@@ -37,6 +37,7 @@ translateBtn.addEventListener("click", function (event) {
   event.preventDefault();
   wordList = userInput.value.split(" ")
   getTranslate(chosenLanguage, userInput.value);
+  saveToLocalStorage(userInput.value)
 });
 
 
@@ -136,7 +137,6 @@ function populateDropdown(data) {
 }
 
 dropdownResponse.addEventListener('change', function(event) {
-  console.log(event.target.value)
   chosenLanguage = event.target.value;
 });
   

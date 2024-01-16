@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #f0f0f0; 
+    /* height:100svh; */
 }
 
 .mainDiv {
@@ -117,6 +118,9 @@ footer {
     align-content: center;
 }
 
+#outputlangSelector {
+    font-size:14px;
+}
 
 #meetDev {
 
