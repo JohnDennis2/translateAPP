@@ -144,6 +144,7 @@ randomLangBtn.addEventListener('click', function() {
   langChoices = document.getElementsByClassName('langChoices')
   let randomLang = Math.floor(Math.random() * langChoices.length);
   getTranslate(langChoices[randomLang].value, userInput.value);
+  randomLangBtn.textContent = langChoices[randomLang].textContent 
 });
   
 
