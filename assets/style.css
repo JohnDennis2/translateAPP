@@ -13,17 +13,16 @@ body {
     background-color: #f0f0f0; 
 }
 
-#characterLimit {
-display:flex;
-justify-content:end;
-align-items: end;
-background-color: white;
-color:gray;
-font-size: 14px;
+.mainDiv {
+    background-color: aqua;
+    opacity: 0.9;
+    background-size: cover;
+    
 }
 
-ß
-
+.secondContainer {
+    padding: 20px;
+}ß
 .section {
     
     height: 100vh;
@@ -31,7 +30,11 @@ font-size: 14px;
     opacity: 0.8;
    
 }
-.column textarea {
+
+
+.column {
+
+justify-self: center;
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
@@ -40,7 +43,7 @@ font-size: 14px;
 
 
 .container {
-   
+    
     display: flexbox;
     border: 1px solid #ccc; 
     opacity: 1;
@@ -66,24 +69,48 @@ h1 {
     color: white;
 }
 
+#randomAndSaved {
+justify-content: center;
+align-items: center;
+
+}
+
+#firstColumnButtons {
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+}
 .control {
+    justify-content: center;
+    align-items: center;
     text-align: center; 
-    color: aliceblue;
+    color: rgb(128, 178, 222);
 }
 
 .field {
+    display: inline-block;
     align-items: center;
+    justify-content: space-between;
+    justify-content: center;
     text-align: center; 
     color: aliceblue;
     border-style: groove;
-    border-color: rgb(165, 165, 165);
+    border-color: rgb(77, 79, 215);
     border-radius: 10px;
 }
 footer {
     
-
     align-items: center;
     align-content: center;
+}
+
+
+#meetDev {
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .button {
@@ -107,10 +134,14 @@ footer {
 }
 
 .meet {
-    justify-content: center;
-    align-items: center;
     color: darkgrey;
     align-items: center;
+    font-style: normal;
+}
+
+.buttonAndField {
+
+    justify-content: center;
 }
 
 #meetDevBtn {
