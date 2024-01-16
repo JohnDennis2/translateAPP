@@ -25,7 +25,7 @@
                             <textarea id="inputText" maxlength="2500" class="textarea"
                                 placeholder="Enter text to translate"></textarea>
                             <span id="characterLimit">Character Limit: </span>
-                          
+
                         </div>
                     </div>
                     <div class="grid-rows-1" id="translateBtns">
@@ -44,69 +44,40 @@
                             <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
                                 readonly></textarea>
                         </div>
-                    </div>         
-                        <div>
+                    </div>
+                    <div>
 
-                    <div class="field">
-
-                        <button class="button is-primary">Random Translation Language</button>
-                        <div id="randomTranslations" class="notification is-primary">
-
-                        </div>
-                        <div class="field">
-
-                            <label class="label">Select Language To Translate</label>
-                           <div class= "flex grid-rows-1">
-                               <div class="dropdown flex-1 justify-between is-active" id="languageBox">
-                            <button class="button is-primary flex-1">Random Translation Language</button>
-                                            <select
-                                            id= "outputlangSelector"
-                                            class= "button flex-1"
-                                            aria-haspopup="true" aria-controls="dropdown-menu"
-                                            ></select>
-                                        </button>
-                                    </div>
-
-                                    <label class="label has-text-centered">Select Language</label>
-                                    <div class="buttons are-small">
-                                        <div class="dropdown">
-                                            <div class="dropdown-trigger">
-                                                <select id="outputlangSelector" class="button" aria-haspopup="true"
-                                                    aria-controls="dropdown-menu">
-                                                    <span>Languages</span>
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                                    </span>
-                                                </select>
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="flex grid-rows-1">
+                            <div class="dropdown flex-1 justify-between is-active" id="languageBox">
+                                <button class="button is-primary flex-1">Random Translation Language</button>
+                                <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
+                                    aria-controls="dropdown-menu"></select>
+                                </button>
                             </div>
-                        </div> 
                         </div>
-
-                                <footer>
-
-                            </div>
+                        <div id="savePhrasesBtn">
                             <!-- Button to navigate to savedPhrases.html -->
-                            <button id="viewPhrasesBtn" class="button is-success">Saved Phrases</button>
+                            <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
                             </footer>
-
-
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        </div>
+        </div>
+        </div>
     </section>
 
 
     <footer class="container">
-        <div class="notification is-primary">
-            <button class="button is-primary">MEET THE DEVELOPERS! Click me</button>
-            <!-- Button to navigate to savedPhrases.html -->
-            <button id="viewPhrasesBtn">SavedPhrases</button>
+        <div class="notification is-primary" id="meetDev">
+            <button class="button is-primary" id="meetDevBtn" >MEET THE DEVELOPERS!</button>
         </div>
     </footer>
 
