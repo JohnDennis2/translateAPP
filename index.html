@@ -18,15 +18,16 @@
             </h1>x
             <div class="columns">
                 <div class="column is-half">
-                    <div class="field">
+                    <div class="field column">
                         <label class="label">Input Text</label>
                         <div class="control">
 
                             <textarea id="inputText" maxlength="2500" class="textarea"
                                 placeholder="Enter text to translate"></textarea>
-                            <span id="characterLimit">Character Limit: </span>
+                            <span id="characterLimit" style="color: ghostwhite;">Character Limit: </span>
 
                         </div>
+
                     </div>
                     <div class="grid-rows-1" id="translateBtns">
                         <span class="control">
@@ -36,9 +37,12 @@
                             <button class="button is-primary" id="translateBtn">Translate</button>
                         </span>
                     </div>
+
                 </div>
+               
+
                 <div class="column is-half">
-                    <div class="field">
+                    <div class="field column">
                         <label class="label">Translated Text</label>
                         <div class="control">
                             <textarea id="outputText" class="textarea" placeholder="Translated text will appear here"
@@ -72,10 +76,12 @@
 
 
         </div>
+
         </div>
         </div>
     </section>
 
+         
 
     <footer class="container">
         <div class="notification is-primary" id="meetDev">
@@ -83,9 +89,9 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
-    <script src="./savedPhrasesScript.js"></script>
+            <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+            <script src="./assets/script.js"></script>
+            <script src="./savedPhrasesScript.js"></script>
 
 
 
