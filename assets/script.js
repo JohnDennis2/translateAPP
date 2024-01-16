@@ -109,7 +109,6 @@ const getDropdown = async function (language, input) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result);
     populateDropdown(result);
     return result; 
   } catch (error) {
@@ -120,7 +119,6 @@ const getDropdown = async function (language, input) {
 
 function populateDropdown(data) {
   const dropdown = document.getElementById('outputlangSelector');
-  console.log(data);
   data.forEach(dataItem => {
     const option = document.createElement('option');
     option.value = dataItem.code;
@@ -149,5 +147,3 @@ function saveToLocalStorage(phrase) {
   savedPhrases.push(phrase);
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
-
-l
