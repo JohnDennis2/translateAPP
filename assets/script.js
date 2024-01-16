@@ -4,7 +4,7 @@ const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
 const maxCharacter = 2500;
 const characterLimitOnScreen = document.getElementById('characterLimit');
-
+const randomLangBtn = document.getElementById('randomLangBtn');
 const dropdownResponse = document.getElementById('outputlangSelector');
 
 
@@ -129,6 +129,7 @@ function populateDropdown(data) {
   const dropdown = document.getElementById('outputlangSelector');
   data.forEach(dataItem => {
     const option = document.createElement('option');
+    option.classList.add('langChoices');
     option.value = dataItem.code;
     option.textContent = dataItem.language;
     option.addEventListener('click', () => handleOptionClick(option));
@@ -139,7 +140,15 @@ function populateDropdown(data) {
 dropdownResponse.addEventListener('change', function(event) {
   chosenLanguage = event.target.value;
 });
+
+randomLangBtn.addEventListener('click', function() {
+  langChoices = document.getElementsByClassName('langChoices')
+  let randomLang = Math.floor(Math.random() * langChoices.length);
+  getTranslate(langChoices[randomLang].value, userInput.value);
+  randomLangBtn.textContent = langChoices[randomLang].textContent 
+});
   
+
   window.onload = function() {
     getDropdown();
     populateDropdown();
