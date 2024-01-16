@@ -58,7 +58,7 @@ const randomWord = async function () {
 }
 
 const randomBtn = document.getElementById('randomBtn')
-randomBtn.addEventListener("click", function (event) {
+randomBtn.addEventListener("click", async function (event) {
   event.preventDefault();
   randomWord();
   console.log(wordList);
