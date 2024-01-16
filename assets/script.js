@@ -150,3 +150,4 @@ function saveToLocalStorage(phrase) {
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
 
+l
