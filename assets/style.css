@@ -1,17 +1,19 @@
 
-html, body {
-    height: 100%;
-    margin: 0;
+html {
+    height : 100svh;
+  
+  
 }
 
 body {
     
     justify-content: center;
     background-image: url(./BackgroundImage1.png);
+    
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-color: #f0f0f0; 
-    /* height:100svh; */
+    height:100svh;
 }
 
 .mainDiv {
@@ -38,12 +40,28 @@ body {
 
 .section {
     
-    height: 100vh;
+    height: 100svh;
     background-color: aqua;
     opacity: 0.8;
    
 }
 
+#savedPhrasesContainer {
+    justify-content: center;
+    background-image: url(./BackgroundImage1.png);
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #f0f0f0; 
+    height:100svh;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    margin-top: 10px;
+
+
+
+}
 
 .column {
 
@@ -169,6 +187,7 @@ footer {
     .column {
         width: 100% ;
         font-size: small;
+        background-size: 100% 100%;
     }
 
    
@@ -179,6 +198,8 @@ footer {
     .column {
         width: 100% ;
         font-size: medium;
+        background-size: 100% 100%;
+
 
     }
 }
@@ -187,6 +208,7 @@ footer {
         .column {
             width: 100% ;
             font-size: larger;
+            background-size: 100% 100%;
         }
     }
 
