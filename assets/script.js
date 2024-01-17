@@ -1,5 +1,5 @@
 let wordList = [];
-const chosenLanguage = "es";
+
 const userInput = document.getElementById('inputText')
 const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
@@ -7,6 +7,7 @@ const maxCharacter = 2500;
 const characterLimitOnScreen = document.getElementById('characterLimit');
 
 const dropdownResponse = document.getElementById('outputlangSelector');
+const savBtn = document.querySelector('#saveButton');
 
 
 const getTranslate = async function (language, input) {
@@ -149,7 +150,7 @@ dropdownResponse.addEventListener('change', function(event) {
   };
 
 
-  //my work area
+  
 
 
 function saveToLocalStorage(phrase) {
@@ -158,4 +159,4 @@ function saveToLocalStorage(phrase) {
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
 
-l
+

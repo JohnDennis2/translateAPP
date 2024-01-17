@@ -1,16 +1,22 @@
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,{
+    height: 100svh;
+  
+  
 }
 
 body {
     
     justify-content: center;
     background-image: url(./BackgroundImage1.png);
+    
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-color: #f0f0f0; 
+    height: 100dvh;
+    margin: 0;
+   
+    
 }
 
 .mainDiv {
@@ -20,12 +26,21 @@ body {
     
 }
 
+#characterLimit {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+}
+
 .secondContainer {
     padding: 20px;
 }ß
 .section {
     
-    height: 100vh;
+    height: 100svh;
     background-color: aqua;
     opacity: 0.8;
    
@@ -153,6 +168,7 @@ footer {
     .column {
         width: 100% ;
         font-size: small;
+        background-size: 100% 100%;
     }
 
    
@@ -163,6 +179,8 @@ footer {
     .column {
         width: 100% ;
         font-size: medium;
+        background-size: 100% 100%;
+
 
     }
 }
@@ -171,5 +189,29 @@ footer {
         .column {
             width: 100% ;
             font-size: larger;
+            background-size: 100% 100%;
         }
     }
+
+    @media (max-height: 600px) {
+        .column {
+          height: 50vh; 
+        }
+      }
+      
+      @media (max-height: 400px) {
+        .column {
+          height: 25vh; 
+        }
+      }
+      @media (max-width: 768px) {
+        body {
+          background-size: cover;
+        }
+      }
+
+      @media (max-width: 200px) {
+        body {
+          background-size: cover;
+        }
+      }

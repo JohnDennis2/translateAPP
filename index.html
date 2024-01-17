@@ -24,12 +24,12 @@
 
                             <textarea id="inputText" maxlength="2500" class="textarea"
                                 placeholder="Enter text to translate"></textarea>
-                            <span id="characterLimit" style="color: ghostwhite;">Character Limit: </span>
+                            <span id="characterLimit" >Character Limit: </span>
 
                         </div>
 
-                    </div>
-                    <div class="grid-rows-1" id="translateBtns">
+                    </div class= "is-grouped">
+                    <div class="grid-rows-1 " id="translateBtns">
                         <span class="control">
                             <button id="randomBtn" class="button is-primary">Random Word</button>
                         </span>
@@ -39,7 +39,7 @@
                     </div>
 
                 </div>
-               
+
 
                 <div class="column is-half">
                     <div class="field column">
@@ -49,35 +49,35 @@
                                 readonly></textarea>
                         </div>
                     </div>
-                    <div>
 
 
 
+                    
                         <label class="label">Select Language To Translate</label>
-                        <div class="flex grid-rows-1">
-                            <div class="dropdown flex-1 justify-between is-active" id="languageBox">
-                                <button class="button is-primary flex-1">Random Translation Language</button>
-                                <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
-                                    aria-controls="dropdown-menu"></select>
-                                </button>
-                            </div>
+
+
+                        <button class="button is-primary flex-1">Random Translation Language</button>
+                        <select id="outputlangSelector" class="button flex-1" aria-haspopup="true"
+                            aria-controls="dropdown-menu"></select>
+                        </button>
+
+
+                   
 
 
 
 
+                    <div id="savePhrasesBtn">
+                        <!-- Button to navigate to savedPhrases.html -->
+                        <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
 
-                        </div>
-                        <div id="savePhrasesBtn">
-                            <!-- Button to navigate to savedPhrases.html -->
-                            <button id="viewPhrasesBtn" class="button is-primary">Saved Phrases</button>
-                           
-                        </div>
                     </div>
                 </div>
-
-               
-                
             </div>
+
+
+
+        </div>
         </div>
         </div>
         </div>
@@ -92,18 +92,18 @@
         </div>
     </section>
 
-         
 
-            <footer class="container">
-                <div class="notification is-primary" id="meetDev">
-                    <a href="./dev.html" class="button is-primary" id="meetDevBtn">MEET THE DEVELOPERS!</a>
 
-                </div>
-            </footer>
+    <footer class="container">
+        <div class="notification is-primary" id="meetDev">
+            <a href="./dev.html" class="button is-primary" id="meetDevBtn">MEET THE DEVELOPERS!</a>
 
-            <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
-            <script src="./assets/script.js"></script>
-            <script src="./savedPhrasesScript.js"></script>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0e4228ab2f.js" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+    <script src="./savedPhrasesScript.js"></script>
 
 
 
