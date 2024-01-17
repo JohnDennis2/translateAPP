@@ -46,6 +46,17 @@ body {
    
 }
 
+#savedPhrasesContainer {
+    justify-content: center;
+    background-image: url(./BackgroundImage1.png);
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #f0f0f0; 
+    height:100svh;
+
+
+}
 
 .column {
 
