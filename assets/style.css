@@ -1,71 +1,58 @@
-
 html {
-    height : 100svh;
-  
-  
+    height: 100svh;
 }
 
 body {
-    
+
     justify-content: center;
     background-image: url(./BackgroundImage1.png);
-    
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: #f0f0f0; 
-    height:100svh;
+    background-color: #f0f0f0;
+    height: 100svh;
 }
 
 .mainDiv {
     background-color: aqua;
     opacity: 0.9;
     background-size: cover;
-    
+
 }
 
 #characterLimit {
-    display:flex;
-    justify-content:end;
+    display: flex;
+    justify-content: end;
     align-items: end;
     background-color: white;
-    color:gray;
+    color: gray;
     font-size: 14px;
-    }
+}
+
+#chooseLang {
+    margin-top: 10px;
+}
 
 .secondContainer {
     padding: 20px;
 }
 
-ß
+ß .section {
 
-.section {
-    
     height: 100svh;
     background-color: aqua;
     opacity: 0.8;
-   
+
 }
 
 #savedPhrasesContainer {
     justify-content: center;
-    background-image: url(./BackgroundImage1.png);
-    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #f0f0f0; 
-    height:100svh;
-    justify-content: space-evenly;
-    
     align-items: center;
     margin-top: 10px;
-
-
-
 }
 
 .column {
 
-justify-self: center;
+    justify-self: center;
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
@@ -74,9 +61,9 @@ justify-self: center;
 
 
 .container {
-    
+
     display: flexbox;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     opacity: 1;
     padding: 20px;
     border-radius: 10px;
@@ -94,15 +81,15 @@ h1 {
 }
 
 .label {
-    
+
     background-color: darkcyan;
-    text-align: center; 
+    text-align: center;
     color: white;
 }
 
 #randomAndSaved {
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -112,10 +99,11 @@ align-items: center;
     align-items: center;
 
 }
+
 .control {
     justify-content: center;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     color: rgb(128, 178, 222);
 }
 
@@ -124,20 +112,21 @@ align-items: center;
     align-items: center;
     justify-content: space-between;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
     color: aliceblue;
     border-style: groove;
     border-color: rgb(77, 79, 215);
     border-radius: 10px;
 }
+
 footer {
-    
+
     align-items: center;
     align-content: center;
 }
 
 #outputlangSelector {
-    font-size:14px;
+    font-size: 14px;
 }
 
 #meetDev {
@@ -164,7 +153,7 @@ footer {
 }
 
 #viewPhrasesBtn {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .meet {
@@ -183,31 +172,64 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    
+
     .column {
-        width: 100% ;
+        width: 100%;
         font-size: small;
         background-size: 100% 100%;
     }
 
-   
+
 }
 
 @media screen and (max-width: 700px) {
-   
+
     .column {
-        width: 100% ;
+        width: 100%;
         font-size: medium;
         background-size: 100% 100%;
 
 
     }
 }
-    @media screen and (max-width: 300px) {
-       
-        .column {
-            width: 100% ;
-            font-size: larger;
-            background-size: 100% 100%;
-        }
+
+@media screen and (max-width: 300px) {
+
+    .column {
+        width: 100%;
+        font-size: larger;
+        background-size: 100% 100%;
     }
+}
+
+#savedBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#savedHeader {
+    border: 2px solid #333;
+    font-size: 20px;
+    color: rgb(37, 168, 168);
+    font-weight: bold;
+    padding: 20px;
+}
+
+#savedPhrasesContainer {
+    border: 2px solid #333;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+#savedPhrasesContainer > p {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    color:rgb(41, 151, 151);
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}

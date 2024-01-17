@@ -29,7 +29,6 @@ const getTranslate = async function (language, input) {
     const response = await fetch(url, options);
     const result = await response.json();
     userOutput.textContent = result.trans;
-    saveToLocalStorage(userInput.value);
   } catch (error) {
     console.error(error);
   }
@@ -98,14 +97,6 @@ const supportedLanguages = async function () {
   }
 }
 
-translateBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  getTranslate(chosenLanguage, userInput.value);
-  saveToLocalStorage(userInput.value)
-});
-
-
-
 const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/support-languages';
 const options = {
   method: 'GET',
@@ -149,7 +140,7 @@ randomLangBtn.addEventListener('click', function () {
   let randomLang = Math.floor(Math.random() * langChoices.length);
   getTranslate(langChoices[randomLang].value, userInput.value);
   randomLangBtn.textContent = langChoices[randomLang].textContent
-
+  saveToLocalStorage(userInput.value);
 });
 
 
