@@ -6,6 +6,7 @@ const maxCharacter = 2500;
 const characterLimitOnScreen = document.getElementById('characterLimit');
 const randomLangBtn = document.getElementById('randomLangBtn');
 const dropdownResponse = document.getElementById('outputlangSelector');
+const savBtn = document.querySelector('#saveButton');
 
 
 const getTranslate = async function (language, input) {

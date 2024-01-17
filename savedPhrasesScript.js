@@ -1,3 +1,18 @@
+
+function saveToLocalStorage(phrase) {
+    let savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
+    savedPhrases.push(phrase);
+    localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
+  }
+  const savBtn = document.querySelector('#saveButton');
+  savBtn.addEventListener('click', function() {
+    const phrase = document.querySelector('#phraseInput').value;
+    saveToLocalStorage(phrase);
+  });
+  
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const savedPhrasesContainer = document.getElementById('savedPhrasesContainer');
     const savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
@@ -29,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
      const viewPhrasesBtn = document.getElementById('viewPhrasesBtn');
     if (viewPhrasesBtn) {
         viewPhrasesBtn.addEventListener('click', function () {
-            window.location.href = 'file:///Users/ericreyna/Documents/Homework/translateAPP/savedPhrases.html';
+            window.location.href = 'savedPhrases.html';
         });
      }
 });
