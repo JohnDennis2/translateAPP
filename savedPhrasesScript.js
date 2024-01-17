@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const savedPhrases = JSON.parse(localStorage.getItem('savedPhrases')) || [];
 
     savedPhrases.forEach(function (phrase) {
-        const phraseElement = document.createElement('div');
+        const phraseElement = document.createElement('p');
         phraseElement.textContent = phrase;
         savedPhrasesContainer.appendChild(phraseElement);
     });

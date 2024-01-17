@@ -28,7 +28,6 @@ const getTranslate = async function (language, input) {
     const response = await fetch(url, options);
     const result = await response.json();
     userOutput.textContent = result.trans;
-    saveToLocalStorage(userInput.value);
   } catch (error) {
     console.error(error);
   }

@@ -189,3 +189,26 @@ footer {
             font-size: larger;
         }
     }
+
+    #savedBody {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #savedPhrasesContainer {
+        border: 2px solid #333;
+        padding: 50px;
+        border-radius: 8px;
+        text-align: center;
+        
+    }
+
+    #savedPhrasesContainer > p {
+        list-style-type: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        color:black;
+        font-size: 20px;
+        text-decoration: underline;
+    }
