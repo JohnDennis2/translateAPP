@@ -1,11 +1,10 @@
 let wordList = [];
-
 const userInput = document.getElementById('inputText')
 const userOutput = document.getElementById('outputText')
 const translateBtn = document.getElementById('translateBtn')
 const maxCharacter = 2500;
 const characterLimitOnScreen = document.getElementById('characterLimit');
-
+const randomLangBtn = document.getElementById('randomLangBtn');
 const dropdownResponse = document.getElementById('outputlangSelector');
 const savBtn = document.querySelector('#saveButton');
 
@@ -30,6 +29,7 @@ const getTranslate = async function (language, input) {
     const response = await fetch(url, options);
     const result = await response.json();
     userOutput.textContent = result.trans;
+    saveToLocalStorage(userInput.value);
   } catch (error) {
     console.error(error);
   }
@@ -59,7 +59,7 @@ const randomWord = async function () {
     const result = await response.json();
     wordList.push(result.word);
     console.log(wordList);
-    userInput.value = ' ' + wordList.join(' ');
+    userInput.value = '' + wordList.join(' ');
   } catch (error) {
     console.error(error);
   }
@@ -71,7 +71,7 @@ randomBtn.addEventListener("click", async function (event) {
   randomWord();
 });
 
-userInput.addEventListener("input", function(){
+userInput.addEventListener("input", function () {
   const remainingCharacters = userInput.value.length
   characterLimitOnScreen.innerHTML = "Character limit: " + remainingCharacters + "/" + maxCharacter;
 })
@@ -100,17 +100,18 @@ const supportedLanguages = async function () {
 translateBtn.addEventListener("click", function (event) {
   event.preventDefault();
   getTranslate(chosenLanguage, userInput.value);
+  saveToLocalStorage(userInput.value)
 });
 
 
 
 const url = 'https://google-translate113.p.rapidapi.com/api/v1/translator/support-languages';
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'a5ac7c3d29mshd0795af90bdbbafp1dcb85jsna3494457d90e',
-		'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
-	}
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'a5ac7c3d29mshd0795af90bdbbafp1dcb85jsna3494457d90e',
+    'X-RapidAPI-Host': 'google-translate113.p.rapidapi.com'
+  }
 };
 
 
@@ -118,20 +119,19 @@ const getDropdown = async function (language, input) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result);
     populateDropdown(result);
-    return result; 
+    return result;
   } catch (error) {
     console.error(error);
-    throw error; 
+    throw error;
   }
 };
 
 function populateDropdown(data) {
   const dropdown = document.getElementById('outputlangSelector');
-  console.log(data);
   data.forEach(dataItem => {
     const option = document.createElement('option');
+    option.classList.add('langChoices');
     option.value = dataItem.code;
     option.textContent = dataItem.language;
     option.addEventListener('click', () => handleOptionClick(option));
@@ -139,18 +139,23 @@ function populateDropdown(data) {
   });
 }
 
-dropdownResponse.addEventListener('change', function(event) {
-  console.log(event.target.value)
+dropdownResponse.addEventListener('change', function (event) {
   chosenLanguage = event.target.value;
 });
-  
-  window.onload = function() {
-    getDropdown();
-    populateDropdown();
-  };
+
+randomLangBtn.addEventListener('click', function () {
+  langChoices = document.getElementsByClassName('langChoices')
+  let randomLang = Math.floor(Math.random() * langChoices.length);
+  getTranslate(langChoices[randomLang].value, userInput.value);
+  randomLangBtn.textContent = langChoices[randomLang].textContent
+
+});
 
 
-  
+window.onload = function () {
+  getDropdown();
+  populateDropdown();
+};
 
 
 function saveToLocalStorage(phrase) {
@@ -158,5 +163,3 @@ function saveToLocalStorage(phrase) {
   savedPhrases.push(phrase);
   localStorage.setItem('savedPhrases', JSON.stringify(savedPhrases));
 }
-
-

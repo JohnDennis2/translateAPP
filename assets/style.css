@@ -1,6 +1,6 @@
 
-html,{
-    height: 100svh;
+html {
+    height : 100svh;
   
   
 }
@@ -13,10 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: #f0f0f0; 
-    height: 100dvh;
-    margin: 0;
-   
-    
+    height:100svh;
 }
 
 .mainDiv {
@@ -27,17 +24,20 @@ body {
 }
 
 #characterLimit {
-    display: flex;
-    justify-content: end;
+    display:flex;
+    justify-content:end;
     align-items: end;
     background-color: white;
-    color: gray;
+    color:gray;
     font-size: 14px;
-}
+    }
 
 .secondContainer {
     padding: 20px;
-}ß
+}
+
+ß
+
 .section {
     
     height: 100svh;
@@ -120,6 +120,9 @@ footer {
     align-content: center;
 }
 
+#outputlangSelector {
+    font-size:14px;
+}
 
 #meetDev {
 
@@ -192,26 +195,3 @@ footer {
             background-size: 100% 100%;
         }
     }
-
-    @media (max-height: 600px) {
-        .column {
-          height: 50vh; 
-        }
-      }
-      
-      @media (max-height: 400px) {
-        .column {
-          height: 25vh; 
-        }
-      }
-      @media (max-width: 768px) {
-        body {
-          background-size: cover;
-        }
-      }
-
-      @media (max-width: 200px) {
-        body {
-          background-size: cover;
-        }
-      }
